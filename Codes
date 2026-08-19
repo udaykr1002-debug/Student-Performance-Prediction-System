@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentAI - Performance Prediction System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="logo">
+            <div class="logo-icon">AI</div>
+            <div>
+                <h2>StudentAI</h2>
+                <span>Analytics System</span>
+            </div>
+        </div>
+
+        <nav>
+            <a href="#" class="active">🏠 Dashboard</a>
+            <a href="#students">👨‍🎓 Students</a>
+            <a href="#prediction">📊 Predictions</a>
+            <a href="#recommendations">💡 Recommendations</a>
+            <a href="#reports">📄 Reports</a>
+            <a href="#settings">⚙ Settings</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <p>Logged in as</p>
+            <strong>Administrator</strong>
+        </div>
+    </aside>
+
+
+    <!-- Main Content -->
+    <main class="main">
+
+        <!-- Header -->
+        <header class="header">
+            <div>
+                <h1>Student Performance Dashboard</h1>
+                <p>Monitor, predict and improve student academic performance.</p>
+            </div>
+
+            <div class="profile">
+                <div class="avatar">AD</div>
+                <div>
+                    <strong>Admin</strong>
+                    <small>Administrator</small>
+                </div>
+            </div>
+        </header>
+
+
+        <!-- Statistics -->
+        <section class="stats">
+
+            <div class="stat-card">
+                <div class="stat-icon blue">👨‍🎓</div>
+                <div>
+                    <span>Total Students</span>
+                    <h2>1,248</h2>
+                    <small class="positive">↑ 8.2% this semester</small>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon green">📈</div>
+                <div>
+                    <span>Average Performance</span>
+                    <h2>78.6%</h2>
+                    <small class="positive">↑ 4.5% improvement</small>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon orange">⚠</div>
+                <div>
+                    <span>At-Risk Students</span>
+                    <h2>86</h2>
+                    <small class="negative">↓ 12 students this month</small>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon purple">🎯</div>
+                <div>
+                    <span>Prediction Accuracy</span>
+                    <h2>92.4%</h2>
+                    <small class="positive">↑ 2.1% accuracy</small>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Dashboard Grid -->
+        <section class="dashboard-grid">
+
+            <!-- Performance Chart -->
+            <div class="card chart-card">
+                <div class="card-header">
+                    <div>
+                        <h2>Performance Overview</h2>
+                        <p>Average student performance by month</p>
+                    </div>
+
+                    <select>
+                        <option>2026</option>
+                        <option>2025</option>
+                        <option>2024</option>
+                    </select>
+                </div>
+
+                <div class="chart">
+
+                    <div class="y-axis">
+                        <span>100%</span>
+                        <span>80%</span>
+                        <span>60%</span>
+                        <span>40%</span>
+                        <span>20%</span>
+                        <span>0%</span>
+                    </div>
+
+                    <div class="bars">
+
+                        <div class="bar-wrapper">
+                            <div class="bar" style="height: 58%;"></div>
+                            <span>Jan</span>
+                        </div>
+
+                        <div class="bar-wrapper">
+                            <div class="bar" style="height: 65%;"></div>
+                            <span>Feb</span>
+                        </div>
+
+                        <div class="bar-wrapper">
+                            <div class="bar" style="height: 62%;"></div>
+                            <span>Mar</span>
+                        </div>
+
+                        <div class="bar-wrapper">
+                            <div class="bar" style="height: 72%;"></div>
+                            <span>Apr</span>
+                        </div>
+
+                        <div class="bar-wrapper">
+                            <div class="bar" style="height: 76%;"></div>
+                            <span>May</span>
+                        </div>
+
+                        <div class="bar-wrapper">
+                            <div class="bar" style="height: 79%;"></div>
+                            <span>Jun</span>
+                        </div>
+
+                        <div class="bar-wrapper">
+                            <div class="bar" style="height: 83%;"></div>
+                            <span>Jul</span>
+                        </div>
+
+                        <div class="bar-wrapper">
+                            <div class="bar" style="height: 86%;"></div>
+                            <span>Aug</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Risk Distribution -->
+            <div class="card">
+                <div class="card-header">
+                    <div>
+                        <h2>Risk Distribution</h2>
+                        <p>Current student risk levels</p>
+                    </div>
+                </div>
+
+                <div class="risk-chart">
+
+                    <div class="circle">
+                        <div>
+                            <strong>1,248</strong>
+                            <span>Students</span>
+                        </div>
+                    </div>
+
+                    <div class="legend">
+                        <div>
+                            <i class="green-dot"></i>
+                            <span>Low Risk</span>
+                            <strong>78%</strong>
+                        </div>
+
+                        <div>
+                            <i class="yellow-dot"></i>
+                            <span>Medium Risk</span>
+                            <strong>15%</strong>
+                        </div>
+
+                        <div>
+                            <i class="red-dot"></i>
+                            <span>High Risk</span>
+                            <strong>7%</strong>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Prediction Section -->
+        <section id="prediction" class="prediction-section">
+
+            <div class="section-title">
+                <div>
+                    <h2>AI Performance Prediction</h2>
+                    <p>Enter student information to estimate academic performance.</p>
+                </div>
+            </div>
+
+            <div class="prediction-card">
+
+                <div class="input-group">
+                    <label>Student Name</label>
+                    <input type="text" placeholder="Enter student name">
+                </div>
+
+                <div class="input-group">
+                    <label>Attendance (%)</label>
+                    <input type="number" placeholder="e.g. 85">
+                </div>
+
+                <div class="input-group">
+                    <label>Previous Score (%)</label>
+                    <input type="number" placeholder="e.g. 78">
+                </div>
+
+                <div class="input-group">
+                    <label>Study Hours / Week</label>
+                    <input type="number" placeholder="e.g. 12">
+                </div>
+
+                <div class="input-group">
+                    <label>Assignments Completed (%)</label>
+                    <input type="number" placeholder="e.g. 90">
+                </div>
+
+                <div class="input-group">
+                    <label>Participation (%)</label>
+                    <input type="number" placeholder="e.g. 75">
+                </div>
+
+                <button class="predict-btn">
+                    🤖 Predict Performance
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Students Table -->
+        <section id="students" class="card students-card">
+
+            <div class="card-header">
+                <div>
+                    <h2>Student Performance</h2>
+                    <p>Recently analyzed students</p>
+                </div>
+
+                <button class="view-btn">View All Students</button>
+            </div>
+
+            <div class="table-container">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Student</th>
+                            <th>Attendance</th>
+                            <th>Previous Score</th>
+                            <th>Predicted Score</th>
+                            <th>Risk Level</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>
+                                <div class="student">
+                                    <div class="student-avatar blue-bg">RS</div>
+                                    <div>
+                                        <strong>Rahul Sharma</strong>
+                                        <small>STU001</small>
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td>94%</td>
+                            <td>82%</td>
+                            <td><strong>88%</strong></td>
+
+                            <td>
+                                <span class="status low">Low Risk</span>
+                            </td>
+
+                            <td>
+                                <button class="action-btn">View</button>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>
+                                <div class="student">
+                                    <div class="student-avatar purple-bg">AP</div>
+                                    <div>
+                                        <strong>Ananya Patel</strong>
+                                        <small>STU002</small>
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td>87%</td>
+                            <td>76%</td>
+                            <td><strong>81%</strong></td>
+
+                            <td>
+                                <span class="status low">Low Risk</span>
+                            </td>
+
+                            <td>
+                                <button class="action-btn">View</button>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>
+                                <div class="student">
+                                    <div class="student-avatar orange-bg">VK</div>
+                                    <div>
+                                        <strong>Vikas Kumar</strong>
+                                        <small>STU003</small>
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td>73%</td>
+                            <td>62%</td>
+                            <td><strong>65%</strong></td>
+
+                            <td>
+                                <span class="status medium">Medium Risk</span>
+                            </td>
+
+                            <td>
+                                <button class="action-btn">View</button>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>
+                                <div class="student">
+                                    <div class="student-avatar red-bg">PS</div>
+                                    <div>
+                                        <strong>Priya Singh</strong>
+                                        <small>STU004</small>
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td>58%</td>
+                            <td>49%</td>
+                            <td><strong>52%</strong></td>
+
+                            <td>
+                                <span class="status high">High Risk</span>
+                            </td>
+
+                            <td>
+                                <button class="action-btn">View</button>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- Recommendations -->
+        <section id="recommendations" class="recommendations">
+
+            <div class="section-title">
+                <div>
+                    <h2>AI Recommendations</h2>
+                    <p>Suggested actions based on student analytics.</p>
+                </div>
+            </div>
+
+            <div class="recommendation-grid">
+
+                <div class="recommendation-card red-border">
+                    <div class="recommendation-icon red-icon">⚠</div>
+
+                    <div>
+                        <h3>Attendance Intervention</h3>
+                        <p>
+                            18 students have attendance below 65%.
+                            Consider contacting their parents or guardians.
+                        </p>
+                        <button>View Students →</button>
+                    </div>
+                </div>
+
+
+                <div class="recommendation-card yellow-border">
+                    <div class="recommendation-icon yellow-icon">📚</div>
+
+                    <div>
+                        <h3>Additional Study Support</h3>
+                        <p>
+                            32 students may benefit from additional study
+                            materials and tutoring sessions.
+                        </p>
+                        <button>View Students →</button>
+                    </div>
+                </div>
+
+
+                <div class="recommendation-card green-border">
+                    <div class="recommendation-icon green-icon">🎯</div>
+
+                    <div>
+                        <h3>High Performers</h3>
+                        <p>
+                            146 students are predicted to achieve above
+                            90%. Consider advanced learning activities.
+                        </p>
+                        <button>View Students →</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Footer -->
+        <footer>
+            <p>© 2026 StudentAI — Student Performance Prediction System</p>
+            <p>AI-powered academic analytics platform</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
